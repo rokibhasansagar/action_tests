@@ -12,8 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - uses: fr3akyphantom/actions_droid-builder
     - name: Initialize
-      uses: fr3akyphantom/actions_droid-builder
       run: |
         cd $HOME/builder
         git config --global user.email "rokibhasansagar2014@outlook.com"
