@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: fr3akyphantom/actions_droid-builder
+    - uses: fr3akyphantom/actions_droid-builder@master
     - name: Initialize
       run: |
         cd $HOME/builder
