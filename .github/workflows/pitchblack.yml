@@ -12,7 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: fr3akyphantom/actions_droid-builder@master
+    - name: Pull the Droid Builder
+      uses: docker://fr3akyphantom/actions_droid-builder@latest
     - name: Initialize
       run: |
         cd $HOME/builder
