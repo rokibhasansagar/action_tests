@@ -11,6 +11,8 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2-beta
+      with:
+        path: "/home/builder"
     - name: Initialize the Droid Builder
       uses: rokibhasansagar/actions_droid-builder@master
