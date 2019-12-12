@@ -32,5 +32,5 @@ jobs:
           source build/envsetup.sh;
           lunch omni_Primo_RX5-userdebug;
           make -j$(nproc --all) recoveryimage;
-          ghr -t ${GITHUB_TOKEN} -n "Test Release for Primo_RX5" -b "PBRP v2.9.0" -delete test out/target/product/Primo_RX5/PitchBlack*.zip
+          # ghr -t ${GITHUB_TOKEN} -n "Test Release for Primo_RX5" -b "PBRP v2.9.0" -delete test out/target/product/Primo_RX5/PitchBlack*.zip
           "'
