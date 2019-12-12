@@ -15,4 +15,4 @@ jobs:
     - name: Initialize the Droid Builder
       uses: rokibhasansagar/actions_droid-builder@master
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GitAllOAuth: ${{ secrets.GitAllOAuth }}
