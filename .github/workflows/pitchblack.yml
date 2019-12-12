@@ -15,7 +15,7 @@ jobs:
     - name: Initialize the Droid Builder
       uses: rokibhasansagar/actions_droid-builder@master
       with:
-        entrypoint: 'bash'
+        entrypoint: '/bin/bash'
         args: '"
           cd $HOME/builder;
           git config --global user.email "rokibhasansagar2014@outlook.com";
